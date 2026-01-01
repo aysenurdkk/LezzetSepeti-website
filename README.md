@@ -1,4 +1,4 @@
-# Lezzet Sepeti
+# Lezzet Sepeti 🍕
 
 Lezzet Sepeti, modern bir yemek sipariş uygulamasıdır. Kullanıcıların favori yemeklerini seçip sipariş verebileceği, sepetlerini yönetebilecekleri ve geçmiş siparişlerini görüntüleyebilecekleri kapsamlı bir e-ticaret platformudur.
 
@@ -12,7 +12,7 @@ Lezzet Sepeti, modern bir yemek sipariş uygulamasıdır. Kullanıcıların favo
 - **Sipariş İşlemleri**: Sipariş bilgilerini doldurma, ödeme yöntemi seçme ve sipariş onayı.
 - **Geçmiş Siparişler**: Kullanıcıların geçmiş siparişlerini görüntüleyebilmesi.
 
-## Teknolojiler
+## Teknolojiler 🚀
 
 - **React**: Frontend uygulaması için
 - **React Router DOM**: Sayfalar arası yönlendirme için
@@ -66,10 +66,3 @@ src/
 - `SiparisOnay`: Sipariş onay sayfası
 - `Siparislerim`: Geçmiş siparişler sayfası
 
-## Katkıda Bulunma
-
-Projeye katkıda bulunmak isterseniz, lütfen önce bir issue oluşturun veya mevcut issue'ları inceleyin.
-
-## Lisans
-
-Bu proje MIT lisansı ile lisanslanmıştır.
