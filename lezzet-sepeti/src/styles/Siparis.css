@@ -1,0 +1,165 @@
+.siparis-sayfa {
+    padding: 2rem 0;
+}
+
+.siparis-sayfa h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.siparis-icerik {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    /* Allow wrapping on smaller screens */
+}
+
+/* Teslimat Formu */
+.teslimat-formu {
+    flex: 2;
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.teslimat-formu h2 {
+    margin-top: 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.form-row .form-group {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 0;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #e74c3c;
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+}
+
+/* Sipariş Özeti */
+.siparis-ozet {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    align-self: flex-start;
+}
+
+.siparis-ozet h2 {
+    margin-top: 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+.urun-listesi {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 1.5rem;
+}
+
+.ozet-urun {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.ozet-urun:last-child {
+    border-bottom: none;
+}
+
+.urun-bilgi h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.urun-bilgi p {
+    margin: 0.25rem 0;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.urun-fiyat {
+    font-weight: bold;
+    color: #e74c3c;
+    white-space: nowrap;
+}
+
+.ozet-detay {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
+}
+
+.ozet-satir {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+}
+
+.ozet-satir.indirim {
+    color: #27ae60;
+}
+
+.ozet-satir.toplam {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid #eee;
+    margin-top: 0.75rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .siparis-icerik {
+        flex-direction: column;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .siparis-ozet {
+        min-width: 100%;
+    }
+}

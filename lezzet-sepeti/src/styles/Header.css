@@ -1,0 +1,163 @@
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    max-width: 100%;
+}
+
+.logo h1 {
+    color: #e74c3c;
+    font-size: 1.8rem;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.desktop-menu .menu-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+}
+
+.desktop-menu .menu-list a {
+    text-decoration: none;
+    color: #000000;
+    /* Black color for menu items */
+    font-weight: 500;
+    transition: color 0.3s;
+    white-space: nowrap;
+    padding: 0.5rem 0;
+    display: block;
+}
+
+.desktop-menu .menu-list a:hover,
+.desktop-menu .menu-list a.active {
+    color: #e74c3c;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-shrink: 0;
+}
+
+.sepet-link {
+    position: relative;
+    text-decoration: none;
+    color: #000000;
+    /* Black color for cart icon */
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sepet-sayac {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.mobil-menu-toggle {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem;
+}
+
+.mobil-menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #000000;
+    /* Black color for hamburger icon */
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+.mobil-menu {
+    display: none;
+}
+
+/* Mobil cihazlar için */
+@media (max-width: 768px) {
+    .header-container {
+        padding: 1rem;
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobil-menu-toggle {
+        display: flex;
+    }
+
+    .mobil-menu.acik {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1001;
+    }
+
+    .mobil-menu-list {
+        list-style: none;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .mobil-menu-list li {
+        padding: 0.75rem 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .mobil-menu-list li:last-child {
+        border-bottom: none;
+    }
+
+    .mobil-menu-list a {
+        text-decoration: none;
+        color: #000000;
+        /* Black color for mobile menu items */
+        font-weight: 500;
+        font-size: 1.1rem;
+        display: block;
+        padding: 0.5rem 0;
+    }
+
+    .mobil-menu-list a:hover,
+    .mobil-menu-list a.active {
+        color: #e74c3c;
+    }
+}

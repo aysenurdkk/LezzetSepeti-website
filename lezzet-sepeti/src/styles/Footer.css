@@ -1,0 +1,46 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0 1rem;
+    margin-top: 3rem;
+    width: 100vw;
+}
+
+.footer-container {
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    width: 100%;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    margin-top: 0;
+    color: #e74c3c;
+}
+
+.footer-section p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    padding: 1rem 2rem;
+    text-align: center;
+    border-top: 1px solid #555;
+    width: 100%;
+}
+
+/* Mobil cihazlar için */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .footer-bottom {
+        padding: 1rem;
+    }
+}

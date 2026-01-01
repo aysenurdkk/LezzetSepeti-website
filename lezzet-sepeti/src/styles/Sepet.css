@@ -1,0 +1,225 @@
+.sepet-sayfa {
+    padding: 2rem 0;
+}
+
+.sepet-sayfa h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+/* Boş Sepet */
+.bos-sepet {
+    text-align: center;
+    padding: 3rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bos-sepet p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+/* Sepet İçerik */
+.sepet-icerik {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Ürün Listesi */
+.urun-listesi {
+    flex: 2;
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sepet-urun {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.sepet-urun:last-child {
+    border-bottom: none;
+}
+
+.urun-gorsel {
+    flex: 0 0 100px;
+}
+
+.urun-gorsel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.urun-bilgi {
+    flex: 1;
+}
+
+.urun-bilgi h3 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+}
+
+.urun-bilgi p {
+    margin: 0.25rem 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.urun-fiyat {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.urun-islem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.adet-guncelle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.adet-btn {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adet {
+    min-width: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Sepet İşlem */
+.sepet-islem {
+    margin-top: 1.5rem;
+    text-align: right;
+}
+
+/* Sipariş Özeti */
+.siparis-ozet {
+    flex: 1;
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+.siparis-ozet h2 {
+    margin-top: 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+.ozet-detay {
+    margin: 1.5rem 0;
+}
+
+.ozet-satir {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px dashed #eee;
+}
+
+.ozet-satir:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.ozet-satir.indirim {
+    color: #27ae60;
+}
+
+.ozet-satir.toplam {
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+/* Kupon Alanı */
+.kupon-alani {
+    margin: 1.5rem 0;
+}
+
+.kupon-input {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.kupon-input .form-control {
+    flex: 1;
+}
+
+.uygulanan-kupon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #e8f4fc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+/* Siparişi Tamamla */
+.siparisi-tamamla {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sepet-icerik {
+        flex-direction: column;
+    }
+
+    .sepet-urun {
+        flex-direction: column;
+    }
+
+    .urun-gorsel {
+        flex: 0 0 auto;
+        width: 100%;
+        height: 200px;
+    }
+
+    .urun-islem {
+        align-items: stretch;
+    }
+
+    .kupon-input {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,285 @@
+.ana-sayfa {
+    padding: 1rem 0;
+}
+
+/* Banner */
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/1200/400?random=24');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.banner-icerik h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.banner-icerik p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Günün Fırsatı */
+.gunun-firsati {
+    padding: 2rem 0;
+    background-color: #f8f9fa;
+}
+
+.full-width-section {
+    padding: 0 2rem;
+    max-width: 100%;
+}
+
+.gunun-firsati h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #e74c3c;
+}
+
+.firsat-icerik {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 0 2rem;
+}
+
+.firsat-resim {
+    flex: 1;
+    min-height: 300px;
+}
+
+.firsat-resim img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.firsat-detay {
+    padding: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.firsat-detay h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.firsat-detay p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+.fiyatlar {
+    margin-bottom: 1.5rem;
+}
+
+.eski-fiyat {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.yeni-fiyat {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Kategoriler */
+.kategoriler {
+    padding: 3rem 0;
+}
+
+.kategoriler h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+    padding: 0 2rem;
+}
+
+.kategori-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    padding: 0 2rem;
+}
+
+.kategori-kart {
+    background-color: #e74c3c;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.kategori-kart:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.kategori-kart h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* Popüler Ürünler */
+.populer-urunler {
+    padding: 3rem 0;
+    background-color: #f8f9fa;
+}
+
+.populer-urunler h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+    padding: 0 2rem;
+}
+
+.urun-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.urun-kart {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.urun-kart:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.urun-kart img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.urun-bilgi {
+    padding: 1.5rem;
+}
+
+.urun-bilgi h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.urun-bilgi p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0 0 1rem 0;
+    min-height: 60px;
+}
+
+.urun-alt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    /* Fiyat ile butonlar arasında boşluk */
+}
+
+.butonlar {
+    display: flex;
+    gap: 0.5rem;
+    /* Add gap between buttons */
+}
+
+.fiyat {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #e74c3c;
+}
+
+/* Butonlar */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #c0392b;
+}
+
+.btn-secondary {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #2980b9;
+}
+
+.btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .banner-icerik h2 {
+        font-size: 2rem;
+    }
+
+    .banner-icerik p {
+        font-size: 1rem;
+    }
+
+    .firsat-icerik {
+        flex-direction: column;
+        margin: 0 1rem;
+    }
+
+    .firsat-resim {
+        width: 100%;
+        min-height: 200px;
+    }
+
+    .kategori-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 1rem;
+    }
+
+    .urun-grid {
+        padding: 0 1rem;
+    }
+
+    .populer-urunler h2,
+    .kategoriler h2 {
+        padding: 0 1rem;
+    }
+}

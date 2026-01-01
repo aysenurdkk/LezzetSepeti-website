@@ -1,0 +1,39 @@
+.not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.not-found-icerik {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.not-found-icerik h1 {
+    font-size: 4rem;
+    color: #e74c3c;
+    margin: 0;
+}
+
+.not-found-icerik h2 {
+    font-size: 2rem;
+    color: #333;
+    margin: 1rem 0;
+}
+
+.not-found-icerik p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.not-found-icerik .btn {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+}
